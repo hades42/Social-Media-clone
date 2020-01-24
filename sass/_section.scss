@@ -1,0 +1,48 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rem;
+  padding-left: 8rem;
+  &__image {
+    height: 15rem;
+    border-radius: 50%;
+    // border: 2px solid whitesmoke;
+  }
+
+  &__detail {
+    margin-left: 5rem;
+  }
+
+  &__name {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2rem;
+    & > * {
+      // align-self: ;
+      background-color: rgba($color: whitesmoke, $alpha: 0.2);
+      text-transform: uppercase;
+      padding: 0.8rem 2rem;
+      border-radius: 3px;
+      border: 1px solid whitesmoke;
+      border: none;
+      transition: 0.1s all;
+      // box-shadow: 0 30px 80px 10px rgba($color: #000000, $alpha: 0.4);
+    }
+    & > *:hover {
+      background-color: rgba($color: whitesmoke, $alpha: 0.3);
+    }
+    a {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    &-update {
+      margin-right: 4rem;
+    }
+  }
+}

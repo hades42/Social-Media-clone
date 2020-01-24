@@ -1,0 +1,130 @@
+.logo {
+  flex: 0 0 8%;
+  margin-left: 1.5rem;
+}
+
+.user_nav {
+  align-self: stretch;
+  display: flex;
+  //   background-color: yellowgreen;
+  //   align-items: center;
+
+  & > * {
+    padding: 0 2rem;
+    //  height: 100%;
+    cursor: pointer;
+    //  align-self: center;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: #2a4270;
+  }
+
+  &-name {
+    margin-right: 1rem;
+  }
+}
+
+.icon-area {
+  //   background-color: burlywood;
+  display: flex;
+  align-self: stretch;
+
+  &__icon-box:hover {
+    background-color: #2a4270;
+  }
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    cursor: pointer;
+    position: relative;
+  }
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__notification {
+    font-size: 1rem;
+    background-color: rgb(151, 51, 51);
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: whitesmoke;
+    //  text-align: center;
+    position: absolute;
+    top: 1.5rem;
+    left: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__border {
+    display: flex;
+    align-self: center;
+    height: 60%;
+    &-right {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      padding-left: 3rem;
+    }
+    &-left {
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      padding-right: 3rem;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  //   background-color: cyan;
+  flex: 0 0 40%;
+  justify-content: center;
+  //   padding-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__input {
+    width: 70%;
+    border: none;
+    border-radius: 100px;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #f4f2f2;
+    padding: 0.6rem 1.5rem;
+    transition: all 0.2s;
+    margin-left: 5rem;
+
+    &:focus {
+      outline: none;
+      background-color: #f4f2f2de;
+      width: 80%;
+    }
+  }
+  &__close {
+    margin-left: -3rem;
+    color: rgba(0, 0, 0, 0.5);
+    //  position: absolute;
+    //  top: 1.75rem;
+    cursor: pointer;
+    &:focus {
+      transform: translateY(3px);
+    }
+  }
+  &__icon {
+    margin-right: -8.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  &__placeholder {
+    position: absolute;
+    //  z-index: 40;
+    color: rgba(0, 0, 0, 0.39);
+    top: 0.4rem;
+    left: 13rem;
+  }
+}

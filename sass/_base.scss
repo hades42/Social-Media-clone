@@ -1,0 +1,81 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.blue {
+  color: #4680eb;
+  cursor: pointer;
+  &:hover {
+    color: #2e5db3;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 60vh 1fr;
+}
+
+.header {
+  background-color: #385998;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  height: 110%;
+  background: url(../img/background2.jpg) no-repeat center center;
+  // background-size: cover;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.content {
+  padding: 0 4rem 4rem 4rem;
+
+  background-color: rgba(241, 239, 239, 0.589);
+  display: grid;
+  grid-template-rows: [tool-start] min-content [tool-end intro-start timeline-start] 20rem [intro-end] repeat(
+      2,
+      [col-start] 1fr [col-end]
+    );
+  grid-template-columns: [sidebar-start] 35rem [sidebar-end content-start] 1fr [content-end];
+  row-gap: 1.5rem;
+  column-gap: 5rem;
+}
